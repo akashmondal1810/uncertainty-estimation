@@ -9,3 +9,10 @@ To achieve this in keras, we have to use the functional API and setup dropout th
 ## Ensemble for Deep Learning Neural Networks
 This is an extension of a model averaging ensemble where the contribution of each member to the final prediction is weighted by the performance of the model. In our case i.e. predicting a class probability, the prediction has been calculated as the `argmax` of the summed probabilities for each class label.
 Here the value for the weights has been estimated using either holdout validation dataset unseen by the ensemble members during training. For searching the weights we are using the `differential_evolution()` SciPy function by minimizing the classification error (1 – accuracy).
+
+## Results
+Models | NGBClassifier | MC Dropout | Deep Ensemble 
+--- | --- | --- | --- 
+breast_cancer | 92.98 | 88.59 | 93.0 
+--- | --- | --- | --- 
+breast_cancer | 92.98 | 88.59 | 93.0 
