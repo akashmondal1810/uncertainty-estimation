@@ -14,4 +14,4 @@ Here the value for the weights has been estimated using either holdout validatio
 Models | NGBClassifier | MC Dropout | Deep Ensemble 
 --- | --- | --- | --- 
 breast_cancer | 92.98 | 88.59 | 93.0 
-breast_cancer | 92.98 | 88.59 | 93.0 
+breast_cancer | 92.98 | 88.59 | 98.8 
