@@ -1,4 +1,8 @@
-# uncertainty-estimation
+# uncertainty-estimation in classification
+The core idea is to use a perturbation method, then pass the data multiple times and store all the predictions. Once we sampled a sufficient number of "distorted predictions", we can estimate something analogous to a confidence interval around the initial model prediction. 
+
+![Selection_047](https://user-images.githubusercontent.com/28530297/80291136-8b33d580-8768-11ea-8f74-67ae5d83389a.png)
+
 
 ## Monte Carlo Model
 Here we are running multiple forward passes trough the model with a different dropout masks every time. For a given a trained neural network model 
